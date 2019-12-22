@@ -1,0 +1,25 @@
+<p>addapp works!</p>
+<form class="container" (ngSubmit)="onSave()" [formGroup]="add">
+    <div>
+        <label>AppName</label>
+        <input formControlName="appName" />
+    </div>
+    <div>
+        <label>AppType</label>
+        <input formControlName="appType"/>
+    </div>
+
+    <div>
+        <label>Description</label>
+        <input formControlName="desc"/>
+    </div>
+    <div>
+        <label>Upload Date</label>
+        <input type="date" formControlName="date"/>
+    </div>
+    <div>
+        <button type="submit">Save</button>
+        <button>Reset</button>
+    </div>
+
+</form>
